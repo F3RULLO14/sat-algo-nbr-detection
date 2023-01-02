@@ -1,0 +1,6 @@
+*.tiff
+*.tif
+output/
+sample/
+*.egg-info
+dist/
