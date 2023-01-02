@@ -1,8 +1,8 @@
 # NBR Detection
 
-This project is to determine COGs **Normalized Burn Ratio** values and further compare differences over time.
+This project's goal is to determine **Normalized Burn Ratio** values for COGs and further compare differences over time.
 
-For more information, please refer to this [explanation](https://un-spider.org/advisory-support/recommended-practices/recommended-practice-burn-severity/in-detail/normalized-burn-ratio) on un-spider.
+For more information regarding the burn ratio, please refer to this [explanation](https://www.un-spider.org/advisory-support/recommended-practices/recommended-practice-burn-severity-mapping) provided by the United Nations.
 
 ## Prerequisite
 
@@ -16,11 +16,11 @@ These can be installed in a new virtual env or found in a pre-existing docker im
 
 ## How to
 
-The script can be ran from the command line or included in a project as an import.
+The project can be ran from the command line or imported for personal use.
 
 ### Command line
 
-*Only calculate values for a single COG*
+*Can NOT compare NBR values over time.*
 
 The python script can be ran from the command line. Two arguments are required, an input and output file path, name.
 
@@ -76,7 +76,7 @@ if __name__ == "__main__":
     evaluate_cog_burn_ratio_difference(fn_cog_before, fn_cog_after, fn_out)
 ```
 
-Result
+Result of [Mosquito Fire](https://www.fire.ca.gov/incidents/2022/9/6/mosquito-fire/) near Lake Tahoe.
 
 <img src="docs/burn_delta.png" width="700">
 
